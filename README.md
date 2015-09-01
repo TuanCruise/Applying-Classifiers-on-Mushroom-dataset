@@ -14,8 +14,18 @@ mushrooms described in terms of physical characteristics; classification: poison
 * 
 # Evaluating with hold-out method
 
-|Classifier|Precision|Recall|F-measure|Confusion matrix|
+|Classifier|Precision|Recall|F-measure|
 |---|---|---|---|---|
-|Naive Bayes|0.946|0.942|0.942|   a    b   <-- classified as
-1763  212 |    a = p
-  22 2065 |    b = e|
+|Naive Bayes|0.946|0.942|0.942|
+|KNN (k=1)|1|1|1|1|
+|ID3 decision tree|1|1|1|1|
+|J48 decision tree|1|1|1|1|
+
+# Evaluating with k-fold cross validation
+
+|Classifier|Precision|Recall|F-measure|
+|---|---|---|---|---|
+|Naive Bayes|0.958|0.956|0.956|
+|KNN (k=1)|1|1|1|1|
+|ID3 decision tree|1|1|1|1|
+|J48 decision tree|1|1|1|1|
