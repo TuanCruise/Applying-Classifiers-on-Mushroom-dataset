@@ -1,12 +1,21 @@
-# Mô tả sơ lược về dữ liệu
-Đây là tập dữ liệu mô tả các đặc tính vật lý của nấm, cùng với nhãn phân loại có độc hoặc ăn được (thuộc tính class đầu tiên: p (poisonous) – có độc, e (edible) – ăn được).
-* Số lượng mẫu: 8124.
-* Số lượng thuộc tính: 22.
-* Kiểu của mỗi thuộc tính: nomial.
-* Thuộc tính thiếu giá trị: stalk-root, số lượng mẫu bị thiếu giá trị: 2480 (31%).
-* Sự phân bố của dữ liệu vào các phân lớp khá cân bằng. Số lượng các phân lớp không áp đảo nhau (imbalanced).
-* Ta dùng filter > unsupervised > attribute > ReplaceMissingValues để điền các giá trị thiếu.
+# Introduction
+This is a data mining experiment on Mushroom dataset. With classification model, we can distinguish  poisonous and edible mushrooms through some characteristics such as smell and color.
 
-Nhờ mô hình phân lớp (classification) ta có thể phân biệt được đâu là nấm độc, đâu là nấm ăn được chỉ thông qua một số đặc điểm nhận diện qua mùi và màu sắc.
+Blog: https://ongxuanhong.wordpress.com/2015/08/25/ap-dung-cac-phuong-phap-phan-lop-classification-tren-tap-du-lieu-mushroom/
 
-Về đặc điểm mùi, nấm nào ăn được thường có mùi hạnh nhân và mùi hoa hồi, nấm độc thường có mùi hôi, tanh, và cay. Còn đặc điểm màu sắc, chỉ có nấm màu xanh lá cây mới ăn được, các loài nấm có màu loè loạt như cam, vàng, tím đều là nấm độc.
+# Exploratory analysis
+mushrooms described in terms of physical characteristics; classification: poisonous (p) or edible (e).
+* Number of instances: 8124.
+* Number of attributes: 22.
+* Data type: nomial.
+* Missing value at: stalk-root, missing instances: 2480 (31%).
+* Distrubution in each class is balance.
+* Using filter > unsupervised > attribute > ReplaceMissingValues for replacing missing values.
+* 
+# Evaluating with hold-out method
+
+|Classifier|Precision|Recall|F-measure|Confusion matrix|
+|---|---|---|---|---|
+|Naive Bayes|0.946|0.942|0.942|   a    b   <-- classified as
+1763  212 |    a = p
+  22 2065 |    b = e|
