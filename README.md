@@ -29,3 +29,6 @@ mushrooms described in terms of physical characteristics; classification: poison
 |KNN (k=1)|1|1|1|1|
 |ID3 decision tree|1|1|1|1|
 |J48 decision tree|1|1|1|1|
+
+# Decision tree visualization
+![Decision tree visualization] (https://ongxuanhong.files.wordpress.com/2015/08/hold-out-j48.png)
